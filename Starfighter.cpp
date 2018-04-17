@@ -15,6 +15,10 @@ Date Last Modified: 4/8/2018 : (Mark)Initial Functions and variables
 void Starfighter::hit() {
 }
 
+void Starfighter::draw(SDL_Plotter g){
+	Standard::draw(graphic, p, 17, 17, g);
+}
+
 void Starfighter::moveShip(int a, SDL_Plotter &g) {
 	p.x = p.x + a;
 	Color col;
