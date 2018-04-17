@@ -18,7 +18,7 @@ private:
 public:
     int health;
     Position p1;
-    const char bullet[8][3] = {'B', 'Q', 'B',
+    const char bullet[8][3] = {	     'B', 'Q', 'B',
                                      'B', 'Q', 'B',
                                      'Q', 'Q', 'Q',
                                      'Q', 'W', 'Q',
