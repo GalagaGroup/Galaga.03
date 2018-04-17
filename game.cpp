@@ -6,7 +6,7 @@ Game::Game(){
 }
 
 void Game::initSounds(SDL_Plotter& g){
-    g.initSound("pac_death.wav");
+    g.initSound("01 Stage Intro.wav");
     g.initSound("ghost_death.wav");
     g.initSound("start.wav");
     g.initSound("blip.wav");
@@ -33,8 +33,6 @@ void Game::initGame(SDL_Plotter& g){
         enemies[i] = Enemy e1(2, 30 * i, 300);
         enemies[i].draw(g, 2);
     }
-
-
 }
 
 void Game::play(){
