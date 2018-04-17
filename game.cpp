@@ -327,7 +327,7 @@ void Game::updateLives(SDL_Plotter& g){
     livesVal = "LIVES:";
     font.plotString(Point(15,960), 2, livesVal, Color(255,255,255),g);
 
-    //only show pacmen if lives are there
+    //only show Starfighters if lives are there
     if(lives >= 2){
         life_1.drawPacman(g);
         life_1.drawTriangle(g);
