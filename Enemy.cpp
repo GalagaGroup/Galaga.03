@@ -46,11 +46,11 @@ void Enemy::moveShip(int a, int b) {
 void Enemy::draw(SDL_Plotter g, int type){
     if(type == 2){
         // also ask your smart friend about this, we need to call the Standard.h draw function from game.cpp but we need to access values in enemy.h, i tried this btu it didnt work obviousely.
-        Standard::draw(moth, pos, 10, 13, g);
+        //Standard::draw(moth, pos, 10, 13, g);
     }
     else if(type == 3){
 
-        Standard::draw(galaga, pos, 10, 13, g);
+        //Standard::draw(galaga, pos, 10, 13, g);
     }
 }
 

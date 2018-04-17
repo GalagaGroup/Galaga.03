@@ -1,35 +1,40 @@
 #include "HUD.h"
 #include "SDL_Plotter.h"
+#include <fstream>
+
 
 HUD::HUD(){
-	int letter size = 7;
+	string top_Bar = "SCORE";
 	Position top_Left;
-	top_Left.x = 20;
-	top_Left.y = 20;
+	top_Left.x = 300;
+	top_Left.y = 30;
+	char letters[26][25][25];
+	char rand_letter;
+	int holder;
 
-	for(int i = 0; i < 7 * SIZE_MULTIPLIER; i = i + SIZE_MULTIPLIER){
-		for(int j = 0; j < 7 * SIZE_MULTIPLIER; j = j + SIZE_MULTIPLIER){
-			for(int k = 0; i < SIZE_MULTIPLIER; k++){
-				if (letter_S[i][j] == "R"){
-					g.plotpixel(top_left.x + i + k, top_Left.y +  = k, 255, 0, 0);
-				}else{
-				//pixel is black and so is the background
-				}
+
+	ifstream inletters;
+	letters.open("Letters.txt");
+
+	for(int i = 0; i < 26; i++){
+			inletters >> rand_letter
+		for(int j = 0; j < 25; j++){
+			for(int k = 0; k < 25; i++){
+					inletters >> letters[i][j][k];
 			}
-
 		}
 	}
-	for(int i = 0; i < 7 * SIZE_MULTIPLIER; i = i + SIZE_MULTIPLIER){
-		for(int j = 0; j < 7 * SIZE_MULTIPLIER; j = j + SIZE_MULTIPLIER){
-			for(int k = 0; i < SIZE_MULTIPLIER; k++){
-				if (letter_S[i][j] == "R"){
-					g.plotpixel(top_left.x + i + k, top_Left.y +  = k, 255, 0, 0);
-				}else{
-				//pixel is black and so is the background
-				}
-			}
 
+	for(int i = 0; i < top_Bar.length(); i++){
+			holder = int(char(top_Bar.substr(i, 1)));
+			holder = holder - 65;
+		for(int j = 0; j < 25; j++){
+			for(int k = 0; k < 25; i++){
+					inletters >> letters[holder][j][];
+			}
 		}
 	}
+
+
 
 }

@@ -55,6 +55,7 @@
 		<Unit filename="Enemy.h" />
 		<Unit filename="HUD.cpp" />
 		<Unit filename="HUD.h" />
+		<Unit filename="Letters.txt" />
 		<Unit filename="Position.h" />
 		<Unit filename="SDL_Plotter.h" />
 		<Unit filename="Standard.cpp" />

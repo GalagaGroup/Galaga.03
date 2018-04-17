@@ -19,3 +19,4 @@ Bullet::Bullet(Position a) {
     for(int i = a.y; i < 1000; i++){
 
     }
+}

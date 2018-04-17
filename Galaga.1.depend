@@ -410,10 +410,10 @@
 
 1523992215 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\galaga.1\color.h
 
-1524002213 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\bullet.cpp
+1524012730 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\bullet.cpp
 	"Bullet.h"
 
-1524002213 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\bullet.h
+1524011588 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\bullet.h
 	"Position.h"
 	"Standard.h"
 
@@ -433,9 +433,9 @@
 	<string.h>
 	<map>
 
-1524002213 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\color.h
+1524011317 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\color.h
 
-1524002213 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\color.h
+1524011317 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\color.h
 
 1524002213 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\main.cpp
 	"game.h"
@@ -1131,4 +1131,8 @@
 	"SDL_version.h"
 	"begin_code.h"
 	"close_code.h"
+
+1524012770 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\enemy.cpp
+	"Enemy.h"
+	"Standard.h"
 

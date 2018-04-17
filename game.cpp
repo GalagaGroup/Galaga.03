@@ -14,7 +14,7 @@ void Game::initSounds(SDL_Plotter& g){
     g.initSound("07 Challenging Stage Perfect.wav");
     g.initSound("08 1-Up.wav");
     g.initSound("09 Die-Start Up Sound.wav");
-    g.initSound("10 Coin.wav);
+    g.initSound("10 Coin.wav");
     g.initSound("11 Name Entry.wav");
     g.initSound("12 Unknown.wav");
     g.initSound("13 Sound Effects.wav");
