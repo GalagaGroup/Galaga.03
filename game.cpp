@@ -107,17 +107,12 @@ void Game::keyboard(SDL_Plotter& g){
         key = g.getKey();
         switch (key)
         {
-            case RIGHT_ARROW: pacMoveTest(g,RIGHT);
+            case RIGHT_ARROW: star.moveShip(g,1);
                               break;
 
-            case LEFT_ARROW:  pacMoveTest(g,LEFT);
+            case LEFT_ARROW:  star.moveShip(g,-1);
                               break;
 
-            case UP_ARROW:    pacMoveTest(g,UP);
-                              break;
-
-            case DOWN_ARROW:  pacMoveTest(g,DOWN);
-                              break;
         }
     }
 }
@@ -127,10 +122,10 @@ void Game::pacMoveTest(SDL_Plotter& g, int d){
     //if not, then keep his original trajectory
     int iDir;
     switch(d){
-        case RIGHT:   iDir = pac.getDirection();
-                      pac.setDirection(RIGHT);
-                      pac.movePacman();
-                      if(maze.collision(pac.getBox())){
+        case RIGHT:     iDir = pac.getDirection();
+                    pac.setDirection(RIGHT);
+                    pac.movePacman();
+                    if(maze.collision(pac.getBox())){
                         pac.setDirection(LEFT);
                         pac.movePacman();
                         pac.setDirection(iDir);
@@ -187,94 +182,6 @@ void Game::pacMoveTest(SDL_Plotter& g, int d){
                       }
                       break;
 
-    }
-
-
-}
-
-void Game::pacWall(SDL_Plotter& g){
-    //if pacman collides with a wall, bump him back
-    if (maze.collision(pac.getBox()))
-    {
-        pac.erasePacman(g);
-
-        if (pac.getDirection() == LEFT)
-        {
-            pac.bumpPacman(RIGHT);
-        }
-        if (pac.getDirection() == RIGHT)
-        {
-            pac.bumpPacman(LEFT);
-        }
-        if (pac.getDirection() == UP)
-        {
-            pac.bumpPacman(DOWN);
-        }
-        if (pac.getDirection() == DOWN)
-        {
-            pac.bumpPacman(UP);
-        }
-        pac.setDirection(STOP);
-
-    }
-}
-
-void Game::ghostWall(SDL_Plotter& g){
-    //if ghosts collide with a wall, bump them back
-    for(int i = 0; i < GHOST_AMOUNT; i++){
-
-        if (maze.collision(ghosts.ghosts[i].getCircle()))
-        {
-            ghosts.ghosts[i].eraseGhost(g);
-
-            if (ghosts.ghosts[i].getDirection() == LEFT)
-            {
-                ghosts.ghosts[i].moveRectangle(RIGHT);
-                ghosts.ghosts[i].moveCircle(RIGHT);
-            }
-            if (ghosts.ghosts[i].getDirection() == RIGHT)
-            {
-                ghosts.ghosts[i].moveRectangle(LEFT);
-                ghosts.ghosts[i].moveCircle(LEFT);
-            }
-            if (ghosts.ghosts[i].getDirection() == UP)
-            {
-                ghosts.ghosts[i].moveRectangle(DOWN);
-                ghosts.ghosts[i].moveCircle(DOWN);
-            }
-            if (ghosts.ghosts[i].getDirection() == DOWN)
-            {
-                ghosts.ghosts[i].moveRectangle(UP);
-                ghosts.ghosts[i].moveCircle(UP);
-            }
-            ghosts.ghosts[i].setDirection(STOP);
-
-        }
-
-    }
-}
-
-void Game::pacGhost(SDL_Plotter& g){
-    //tests collision of ghosts and pacman
-    for(int i = 0; i < GHOST_AMOUNT; i++){
-        if(pac.getCircle().collision(ghosts.ghosts[i].getCircle())){
-            switch(ghosts.ghosts[i].getState()){
-                //if ghosts are normal (kill pacman)
-                case 1: g.playSound("pac_death.wav");
-                        //kill pacman
-                        lives--;
-                        pac.die(g);
-                        break;
-                //if ghosts are blue (eatable)
-                case 2: g.playSound("ghost_death.wav");
-                        //kill ghosts
-                        ghosts.ghosts[i].die();
-                        //increase score
-                        score+=5000;
-                        break;
-            }
-
-        }
     }
 }
 

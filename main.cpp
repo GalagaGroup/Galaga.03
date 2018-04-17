@@ -1,23 +1,15 @@
-#include "game.h"
-
-//A Quick Note:
-
 /*
-    We originally had all the sound a text files
-    in their own, seperate folders, and it worked
-    and was quite organized, but realized that, since
-    we were using the full path, that you would
-    not be able to play the game, as you would not
-    have the path.
-
-    So we just put all the files in the default way.
-    This is just so you know that we did do that, and
-    we know it is clunky with all the files scattered
-    in the folder.
+Author:                 Mark Fuller, Diego Maya
+Assignment Title:       Galaga: The Game!
+Assignment description: This program will faithfully recreate galaga,
+                        the beloved game from the 1980's
+Due Date:               4/25/2018
+Date Created:           4/4/2018
+Date Last Modified:     4/25/2018
 
 */
 
-
+#include "game.h"
 
 int main(int argc, char** argv){
     srand(time(NULL));
