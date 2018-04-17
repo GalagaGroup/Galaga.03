@@ -1,13 +1,12 @@
 #include "game.h"
 
 Game::Game(){
-    score = 0;
     enemies_killed = 0;
 }
 
 void Game::initSounds(SDL_Plotter& g){
     g.initSound("01 Stage Intro.wav");
-    g.initSound("ghost_death.wav");
+    g.initSound("02 Fighter Captured.wav");
     g.initSound("start.wav");
     g.initSound("blip.wav");
     g.initSound("shinderu.wav");

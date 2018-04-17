@@ -8,7 +8,7 @@ using namespace std;
 
 class Game{
     private:
-        Starfighrer star;
+        Starfighter star;
         int enemies_killed;
         Enemy enemies[8];
 
