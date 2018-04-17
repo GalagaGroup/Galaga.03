@@ -1,8 +1,14 @@
 #ifndef GAME_H_INCLUDED
 #define GAME_H_INCLUDED
 
-#include "Starfighter.h"
+#include "Bullet.h"
 #include "Enemy.h"
+#include "HUD.h"
+#include "Position.h"
+#include "SDL_Plotter.h"
+#include "Starfighter.h"
+#include "Type.h"
+#include "color.h"
 
 using namespace std;
 
@@ -43,14 +49,6 @@ class Game{
         void updateScore(SDL_Plotter& g);
         //update the lives
         void updateLives(SDL_Plotter& g);
-        //tests pacmans movement
-        void pacMoveTest(SDL_Plotter& g, int d);
-        //test pacmans collisions with the walls
-        void pacWall(SDL_Plotter& g);
-        //test ghosts collisions with the walls
-        void ghostWall(SDL_Plotter& g);
-        //test pacmans collisions with the ghosts
-        void pacGhost(SDL_Plotter& g);
 
 
 };
