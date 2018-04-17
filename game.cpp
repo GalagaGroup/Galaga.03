@@ -5,14 +5,19 @@ Game::Game(){
 }
 
 void Game::initSounds(SDL_Plotter& g){
+    //Initializes sound waves upon the start of the program
     g.initSound("01 Stage Intro.wav");
     g.initSound("02 Fighter Captured.wav");
-    g.initSound("start.wav");
-    g.initSound("blip.wav");
-    g.initSound("shinderu.wav");
-    g.initSound("reeeee.wav");
-    g.initSound("sonic.wav");
-    g.initSound("win.wav");
+    g.initSound("03 Fighter Rescued.wav");
+    g.initSound("04 Captured Fighter Destroyed.wav");
+    g.initSound("05 Challenging Stage Perfect.wav");
+    g.initSound("07 Challenging Stage Perfect.wav");
+    g.initSound("08 1-Up.wav");
+    g.initSound("09 Die-Start Up Sound.wav");
+    g.initSound("10 Coin.wav);
+    g.initSound("11 Name Entry.wav");
+    g.initSound("12 Unknown.wav");
+    g.initSound("13 Sound Effects.wav");
 }
 
 void Game::initGame(SDL_Plotter& g){
@@ -68,10 +73,10 @@ void Game::play(){
     }
 
     switch(won){
-        //if pacman won the game by eating all the dots
+        //if Starfighter won the game by achieving the highest score
         case 1: win(g);
                 break;
-        //if pacman loses all his lives
+        //if Starfighter loses all of his lives
         case 2: lose(g);
                 break;
     }
@@ -105,17 +110,180 @@ void Game::keyboard(SDL_Plotter& g){
         key = g.getKey();
         switch (key)
         {
-            case RIGHT_ARROW: star.moveShip(g,1);
+            case RIGHT_ARROW: pacMoveTest(g,RIGHT);
                               break;
 
-            case LEFT_ARROW:  star.moveShip(g,-1);
+            case LEFT_ARROW:  pacMoveTest(g,LEFT);
                               break;
 
+            case UP_ARROW:    pacMoveTest(g,UP);
+                              break;
+
+            case DOWN_ARROW:  pacMoveTest(g,DOWN);
+                              break;
         }
     }
 }
 
+<<<<<<< HEAD
 
+=======
+void Game::pacMoveTest(SDL_Plotter& g, int d){
+    //checks to see if pacman can move in his new direction
+    //if not, then keep his original trajectory
+    int iDir;
+    switch(d){
+        case RIGHT:   iDir = pac.getDirection();
+                      pac.setDirection(RIGHT);
+                      pac.movePacman();
+                      if(maze.collision(pac.getBox())){
+                        pac.setDirection(LEFT);
+                        pac.movePacman();
+                        pac.setDirection(iDir);
+                      }
+                      else{
+                        pac.setDirection(LEFT);
+                        pac.movePacman();
+                        pac.setDirection(RIGHT);
+                      }
+                      break;
+
+        case LEFT:    iDir = pac.getDirection();
+                      pac.setDirection(LEFT);
+                      pac.movePacman();
+                      if(maze.collision(pac.getBox())){
+                        pac.setDirection(RIGHT);
+                        pac.movePacman();
+                        pac.setDirection(iDir);
+                      }
+                      else{
+                        pac.setDirection(RIGHT);
+                        pac.movePacman();
+                        pac.setDirection(LEFT);
+                      }
+                      break;
+
+        case UP:      iDir = pac.getDirection();
+                      pac.setDirection(UP);
+                      pac.movePacman();
+                      if(maze.collision(pac.getBox())){
+                        pac.setDirection(DOWN);
+                        pac.movePacman();
+                        pac.setDirection(iDir);
+                      }
+                      else{
+                        pac.setDirection(DOWN);
+                        pac.movePacman();
+                        pac.setDirection(UP);
+                      }
+                      break;
+
+        case DOWN:    iDir = pac.getDirection();
+                      pac.setDirection(DOWN);
+                      pac.movePacman();
+                      if(maze.collision(pac.getBox())){
+                        pac.setDirection(UP);
+                        pac.movePacman();
+                        pac.setDirection(iDir);
+                      }
+                      else{
+                        pac.setDirection(UP);
+                        pac.movePacman();
+                        pac.setDirection(DOWN);
+                      }
+                      break;
+
+    }
+
+
+}
+
+void Game::pacWall(SDL_Plotter& g){
+    //if pacman collides with a wall, bump him back
+    if (maze.collision(pac.getBox()))
+    {
+        pac.erasePacman(g);
+
+        if (pac.getDirection() == LEFT)
+        {
+            pac.bumpPacman(RIGHT);
+        }
+        if (pac.getDirection() == RIGHT)
+        {
+            pac.bumpPacman(LEFT);
+        }
+        if (pac.getDirection() == UP)
+        {
+            pac.bumpPacman(DOWN);
+        }
+        if (pac.getDirection() == DOWN)
+        {
+            pac.bumpPacman(UP);
+        }
+        pac.setDirection(STOP);
+
+    }
+}
+
+void Game::ghostWall(SDL_Plotter& g){
+    //if ghosts collide with a wall, bump them back
+    for(int i = 0; i < GHOST_AMOUNT; i++){
+
+        if (maze.collision(ghosts.ghosts[i].getCircle()))
+        {
+            ghosts.ghosts[i].eraseGhost(g);
+
+            if (ghosts.ghosts[i].getDirection() == LEFT)
+            {
+                ghosts.ghosts[i].moveRectangle(RIGHT);
+                ghosts.ghosts[i].moveCircle(RIGHT);
+            }
+            if (ghosts.ghosts[i].getDirection() == RIGHT)
+            {
+                ghosts.ghosts[i].moveRectangle(LEFT);
+                ghosts.ghosts[i].moveCircle(LEFT);
+            }
+            if (ghosts.ghosts[i].getDirection() == UP)
+            {
+                ghosts.ghosts[i].moveRectangle(DOWN);
+                ghosts.ghosts[i].moveCircle(DOWN);
+            }
+            if (ghosts.ghosts[i].getDirection() == DOWN)
+            {
+                ghosts.ghosts[i].moveRectangle(UP);
+                ghosts.ghosts[i].moveCircle(UP);
+            }
+            ghosts.ghosts[i].setDirection(STOP);
+
+        }
+
+    }
+}
+
+void Game::pacGhost(SDL_Plotter& g){
+    //tests collision of ghosts and pacman
+    for(int i = 0; i < GHOST_AMOUNT; i++){
+        if(pac.getCircle().collision(ghosts.ghosts[i].getCircle())){
+            switch(ghosts.ghosts[i].getState()){
+                //if ghosts are normal (kill pacman)
+                case 1: g.playSound("pac_death.wav");
+                        //kill pacman
+                        lives--;
+                        pac.die(g);
+                        break;
+                //if ghosts are blue (eatable)
+                case 2: g.playSound("ghost_death.wav");
+                        //kill ghosts
+                        ghosts.ghosts[i].die();
+                        //increase score
+                        score+=5000;
+                        break;
+            }
+
+        }
+    }
+}
+>>>>>>> 1438137974905247e18bb5abe09861e89871a7f8
 
 void Game::collisions(SDL_Plotter& g){
     //tests pacmans collision with the walls
@@ -161,7 +329,7 @@ void Game::updateLives(SDL_Plotter& g){
     livesVal = "LIVES:";
     font.plotString(Point(15,960), 2, livesVal, Color(255,255,255),g);
 
-    //only show pacmen if lives are there
+    //only show Starfighters if lives are there
     if(lives >= 2){
         life_1.drawPacman(g);
         life_1.drawTriangle(g);
