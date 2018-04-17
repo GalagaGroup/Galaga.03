@@ -9,8 +9,7 @@ Date Last Modified: 4/3/2018 : (Mark)Initial Header variables and functions.
 
 */
 
-#include "Position.h"
-#include "Standard.h"
+#include "game.h"
 
 class Bullet{
 private:
