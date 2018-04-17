@@ -2,10 +2,7 @@
 
 Game::Game(){
     score = 0;
-    dotsEaten = DOT_COUNT;
-    lives  = LIVES;
-    life_1.setCircle(Circle(Point(190,970),14,Color(200,200,20)));
-    life_2.setCircle(Circle(Point(230,970),14,Color(200,200,20)));
+    enemies_killed = 0;
 }
 
 void Game::initSounds(SDL_Plotter& g){
@@ -27,12 +24,16 @@ void Game::initGame(SDL_Plotter& g){
             g.plotPixel(x,y,0,0,0);
         }
     }
-    titleScreen(g);
 
+    //draw starfighter object on the screen
+    star.draw(g);
 
-    pac.setColor(Color(200,200,20));
-    maze.createMap(g);
-    maze.draw(g);
+    //lost of enemies 15 spaces apart on x = 300
+    for(int i = 0; i < 8; i++){
+        enemies[i] = Enemy e1(2, 30 * i, 300);
+        enemies[i].draw(g, 2);
+    }
+
 }
 
 void Game::play(){

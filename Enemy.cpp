@@ -42,6 +42,18 @@ void Enemy::moveShip(int a, int b) {
 
 }
 
+void Enemy::draw(SDL_Plotter g, int type){
+    if(type == 2){
+            //char graphic[][25], Position a, int height, int width, SDL_Plotter g
+        Standard::draw(moth, pos, 10, 13, g);
+    }
+    else if(type == 3){
+            //char graphic[][25], Position a, int height, int width, SDL_Plotter g
+        Standard::draw(galaga, pos, 10, 13, g);
+    }
+
+}
+
 void Enemy::destroy() {
     //cycle through the blow up frames, destroy object through destructor;
 }

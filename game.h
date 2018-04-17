@@ -10,6 +10,8 @@ class Game{
     private:
         Starfighrer star;
         int score;
+        int enemies_killed;
+        Enemy enemies[8];
 
     public:
         //sets up the default values of the game
@@ -42,7 +44,6 @@ class Game{
         void updateScore(SDL_Plotter& g);
         //update the lives
         void updateLives(SDL_Plotter& g);
-
         //tests pacmans movement
         void pacMoveTest(SDL_Plotter& g, int d);
         //test pacmans collisions with the walls
