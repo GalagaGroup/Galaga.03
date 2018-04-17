@@ -11,11 +11,13 @@ Date Last Modified: 4/17/2018 : (Mark) created all variables
 #ifndef GALAGACLASSES_HUD_H
 #define GALAGACLASSES_HUD_H
 
-struct HUD {
-public:
-    HUD(){
+#include "Standard.h"
 
-    }
+class HUD {
+public:
+    int score = 0;
+    HUD();
+    HUD(int a);
     const char letter_H[7][7]{
             'R', 'R', 'B', 'B', 'B', 'R', 'R',
             'R', 'R', 'B', 'B', 'B', 'R', 'R',

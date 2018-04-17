@@ -34,6 +34,7 @@ void Game::initGame(SDL_Plotter& g){
         enemies[i].draw(g, 2);
     }
 
+
 }
 
 void Game::play(){

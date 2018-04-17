@@ -45,7 +45,7 @@ public:
         void hit();
         void shoot();
         void moveShip(int a, SDL_Plotter &g);
-        void draw(g);
+        void draw(SDL_Plotter g);
 
 };
 

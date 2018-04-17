@@ -9,7 +9,6 @@ using namespace std;
 class Game{
     private:
         Starfighrer star;
-        int score;
         int enemies_killed;
         Enemy enemies[8];
 
