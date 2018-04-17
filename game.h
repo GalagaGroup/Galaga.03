@@ -1,36 +1,15 @@
 #ifndef GAME_H_INCLUDED
 #define GAME_H_INCLUDED
 
-#include "pacman.h"
-#include "color.h"
-#include "circle.h"
-#include "rectangle.h"
-#include "Ghost_Army.h"
-#include "ghosts.h"
-#include "constants.h"
-#include "triangle.h"
-#include "map.h"
-#include "line.h"
-#include "dot.h"
-#include "powerup.h"
-#include "SDL_Plotter.h"
-#include "font.h"
-#include <sstream>
+#include "Starfighter.h"
+#include "Enemy.h"
 
 using namespace std;
 
 class Game{
     private:
-        Pacman pac;
-        Pacman life_1, life_2;
-        Maze maze;
-        char key;
-        Ghosts ghosts;
+        Starfighrer star;
         int score;
-        int lives;
-        Font font;
-        string scoreVal, livesVal;
-        int dotsEaten;
 
     public:
         //sets up the default values of the game
