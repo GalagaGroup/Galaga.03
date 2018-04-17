@@ -75,8 +75,6 @@ void Game::play(){
         case 2: lose(g);
                 break;
     }
-
-
 }
 
 void Game::first(SDL_Plotter& g){
@@ -117,73 +115,7 @@ void Game::keyboard(SDL_Plotter& g){
     }
 }
 
-void Game::pacMoveTest(SDL_Plotter& g, int d){
-    //checks to see if pacman can move in his new direction
-    //if not, then keep his original trajectory
-    int iDir;
-    switch(d){
-        case RIGHT:     iDir = pac.getDirection();
-                    pac.setDirection(RIGHT);
-                    pac.movePacman();
-                    if(maze.collision(pac.getBox())){
-                        pac.setDirection(LEFT);
-                        pac.movePacman();
-                        pac.setDirection(iDir);
-                      }
-                      else{
-                        pac.setDirection(LEFT);
-                        pac.movePacman();
-                        pac.setDirection(RIGHT);
-                      }
-                      break;
 
-        case LEFT:    iDir = pac.getDirection();
-                      pac.setDirection(LEFT);
-                      pac.movePacman();
-                      if(maze.collision(pac.getBox())){
-                        pac.setDirection(RIGHT);
-                        pac.movePacman();
-                        pac.setDirection(iDir);
-                      }
-                      else{
-                        pac.setDirection(RIGHT);
-                        pac.movePacman();
-                        pac.setDirection(LEFT);
-                      }
-                      break;
-
-        case UP:      iDir = pac.getDirection();
-                      pac.setDirection(UP);
-                      pac.movePacman();
-                      if(maze.collision(pac.getBox())){
-                        pac.setDirection(DOWN);
-                        pac.movePacman();
-                        pac.setDirection(iDir);
-                      }
-                      else{
-                        pac.setDirection(DOWN);
-                        pac.movePacman();
-                        pac.setDirection(UP);
-                      }
-                      break;
-
-        case DOWN:    iDir = pac.getDirection();
-                      pac.setDirection(DOWN);
-                      pac.movePacman();
-                      if(maze.collision(pac.getBox())){
-                        pac.setDirection(UP);
-                        pac.movePacman();
-                        pac.setDirection(iDir);
-                      }
-                      else{
-                        pac.setDirection(UP);
-                        pac.movePacman();
-                        pac.setDirection(DOWN);
-                      }
-                      break;
-
-    }
-}
 
 void Game::collisions(SDL_Plotter& g){
     //tests pacmans collision with the walls

@@ -18,6 +18,7 @@ public:
     int score = 0;
     HUD();
     HUD(int a);
+    int SIZE_MULTIPLIER = 4;
     const char letter_H[7][7]{
             'R', 'R', 'B', 'B', 'B', 'R', 'R',
             'R', 'R', 'B', 'B', 'B', 'R', 'R',

@@ -53,6 +53,7 @@
 		<Unit filename="Bullet.h" />
 		<Unit filename="Enemy.cpp" />
 		<Unit filename="Enemy.h" />
+		<Unit filename="HUD.cpp" />
 		<Unit filename="HUD.h" />
 		<Unit filename="Position.h" />
 		<Unit filename="SDL_Plotter.h" />
