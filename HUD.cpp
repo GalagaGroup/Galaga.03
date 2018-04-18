@@ -9,7 +9,7 @@ HUD::HUD(){
 	top_Left.y = 30;
 	char letters[26][25][25];
 	char rand_letter;
-	int holder;
+	//int holder;
 
 
 	ifstream inletters;

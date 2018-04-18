@@ -10,14 +10,3 @@ Date Last Modified: 4/3/2018 : (Mark)Initial variables and functions.
 #include "Bullet.h"
 
 
-void Bullet::moveShip(int x, int y) {
-    //idk if you move the bullett all at once or do you have to call this every loop of the game
-
-}
-/*
-Bullet::Bullet(Position a) {
-    for(int i = a.y; i < 1000; i++){
-
-    }
-}
-*/

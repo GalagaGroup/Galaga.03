@@ -11,6 +11,17 @@ Date Last Modified: 4/8/2018 : (Mark)Initial Functions and variables
 
 #include "Starfighter.h"
 #include "Type.h"
+Starfighter::Starfighter(){
+	health = 1;
+	//pos.x = 40;
+	//pos.y = 80;
+}
+
+Starfighter::Starfighter(int b, int x, int y){
+    Type ship_Type(b);
+    //p.x = x;
+    //p.y = y;
+}
 
 void Starfighter::hit() {
 }
@@ -38,15 +49,7 @@ void Starfighter::shoot() {
     */
 }
 
-Starfighter::Starfighter(int b, int x, int y){
-    Type ship_Type(b);
-    //p.x = x;
-    //p.y = y;
-}
 
-Starfighter::Starfighter(){
-	health = 1;
-	//pos.x = 40;
-	//pos.y = 80;
-}
+
+
 
