@@ -30,4 +30,4 @@ public:
                                      'B', 'R', 'B',};
 };
 
-#endif // BULLET_H
+#endif // BULLET_H_INCLUDED
