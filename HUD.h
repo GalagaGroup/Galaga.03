@@ -204,4 +204,4 @@ public:
 
 };
 
-#endif //GALAGACLASSES_HUD_H
+#endif //HUD_H_INCLUDED
