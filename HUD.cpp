@@ -36,6 +36,6 @@ HUD::HUD(){
 	}
 
 
-
+inletters.close();
 }
 */
