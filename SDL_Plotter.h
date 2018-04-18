@@ -17,6 +17,7 @@
 #include <string>
 #include <string.h>
 #include <map>
+
 using namespace std;
 
 const char UP_ARROW    = 1;
@@ -33,7 +34,7 @@ const int MAX_THREAD = 100;
 #define MUS_PATH "scratch.wav"
 
 //sample threaded sound function
-static int Sound(void *data);
+//static int Sound(void *data);
 
 struct param{
 	bool play;
@@ -206,7 +207,7 @@ public:
     int getCol(){
     	return col;
     }
-
+/*
     void initSound(string sound){
     	//int  *threadReturnValue;
 
@@ -221,11 +222,12 @@ public:
 				//SDL_DetachThread(p->threadID);
 		}
     }
+*/
 
     void setQuit(bool flag){
     	this->quit = flag;
     }
-
+	/*
     void playSound(string sound){
     	if(soundMap[sound].running){
     		SDL_CondSignal(soundMap[sound].cond);
@@ -240,12 +242,11 @@ public:
     void Sleep(int ms){
     	SDL_Delay(ms);
     }
+    */
 };
 
-
-
 //Threaded Function
-
+/*
 static int Sound(void *data){
 	param *p = (param*)data;
 	p->running = true;
@@ -265,7 +266,7 @@ static int Sound(void *data){
 	p->running = false;
 	return 0;
 }
-
+*/
 
 
 #endif /* SDL_PLOTTER_H_ */

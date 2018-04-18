@@ -2,11 +2,11 @@
 1524016206 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\bullet.cpp
 	"Bullet.h"
 
-1524016863 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\bullet.h
+1524071476 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\bullet.h
 	"game.h"
 	"Position.h"
 
-1524015891 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\game.h
+1524071413 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\game.h
 	"Bullet.h"
 	"HUD.h"
 	"SDL_Plotter.h"
@@ -16,7 +16,7 @@
 1524016131 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\hud.h
 	"game.h"
 
-1524002213 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\sdl_plotter.h
+1524071413 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\sdl_plotter.h
 	<SDL2/SDL.h>
 	<SDL2/SDL_mixer.h>
 	<string.h>
@@ -29,17 +29,17 @@
 	"game.h"
 	"Position.h"
 
-1524016863 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\position.h
+1524071476 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\position.h
 	"game.h"
 
-1524016863 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\enemy.h
+1524071355 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\enemy.h
 	"SDL_Plotter.h"
 	"Position.h"
 
 1524016840 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\enemy.cpp
 	"Enemy.h"
 
-1524015663 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\game.cpp
+1524071309 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\game.cpp
 	"game.h"
 	"Enemy.h"
 

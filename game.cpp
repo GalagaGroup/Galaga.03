@@ -5,9 +5,9 @@ Game::Game(){
     enemies_killed = 0;
 
 }
-
+/*
 void Game::initSounds(SDL_Plotter& g){
-    //Initializes sound waves upon the start of the program
+    Initializes sound waves upon the start of the program
     g.initSound("01 Stage Intro.wav");
     g.initSound("02 Fighter Captured.wav");
     g.initSound("03 Fighter Rescued.wav");
@@ -20,7 +20,9 @@ void Game::initSounds(SDL_Plotter& g){
     g.initSound("11 Name Entry.wav");
     g.initSound("12 Unknown.wav");
     g.initSound("13 Sound Effects.wav");
+
 }
+*/
 
 void Game::initGame(SDL_Plotter& g){
 
@@ -58,7 +60,7 @@ void Game::play(){
         keyboard(g);
 
         //checks for game collisions
-        collisions(g);
+        //collisions(g);
 
         //updates the score counter
         updateScore(g);
@@ -74,7 +76,7 @@ void Game::play(){
             won = checkEnd();
         }
     }
-
+/*
     switch(won){
         //if Starfighter won the game by achieving the highest score
         case 1: win(g);
@@ -83,6 +85,7 @@ void Game::play(){
         case 2: lose(g);
                 break;
     }
+    */
 }
 
 void Game::first(SDL_Plotter& g){

@@ -14,6 +14,8 @@ Date Last Modified: 4/3/2018 : (Mark)Initial Header variables and functions.
 #include "SDL_Plotter.h"
 #include "Position.h"
 
+using namespace std;
+
 class Enemy {
 private:
     int health;

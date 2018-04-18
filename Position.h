@@ -11,6 +11,8 @@ Date Last Modified: 4/3/2018 : (Mark)Initial variables and functions.
 #ifndef POSITION_H_INCLUDED
 #define POSITION_H_INCLUDED
 
+using namespace std;
+
 #include "game.h"
 
 struct Position {

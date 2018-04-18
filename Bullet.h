@@ -11,6 +11,7 @@ Date Last Modified: 4/3/2018 : (Mark)Initial Header variables and functions.
 
 #ifndef BULLET_H_INCLUDED
 #define BULLET_H_INCLUDED
+using namespace std;
 
 #include "game.h"
 #include "Position.h"
