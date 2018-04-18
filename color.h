@@ -11,6 +11,8 @@ Date Last Modified: 4/3/2018 : (Mark)Initial Functions and variables
 */
 #include "game.h"
 
+#include "game.h"
+
 struct Color{
     int r;
     int g;
