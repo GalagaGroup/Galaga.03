@@ -49,7 +49,6 @@
 		<Unit filename="11 Name Entry.wav" />
 		<Unit filename="12 Unknown.wav" />
 		<Unit filename="13 Sound Effects.wav" />
-		<Unit filename="Bullet.cpp" />
 		<Unit filename="Bullet.h" />
 		<Unit filename="Enemy.cpp" />
 		<Unit filename="Enemy.h" />

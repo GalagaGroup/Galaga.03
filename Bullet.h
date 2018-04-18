@@ -19,7 +19,7 @@ struct Bullet{
 
 public:
     int health;
-    Position p1;
+    //Position p1;
     const char bullet[8][3] = {	     'B', 'Q', 'B',
                                      'B', 'Q', 'B',
                                      'Q', 'Q', 'Q',

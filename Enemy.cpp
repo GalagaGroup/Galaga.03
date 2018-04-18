@@ -41,7 +41,7 @@ void Enemy::moveShip(int a, int b) {
     //hit();
 
 }
-
+/*
 void Enemy::draw(SDL_Plotter g, int type){
     if(type == 2){
         // also ask your smart friend about this, we need to call the Standard.h draw function from game.cpp but we need to access values in enemy.h, i tried this btu it didnt work obviousely.
@@ -52,10 +52,8 @@ void Enemy::draw(SDL_Plotter g, int type){
         //Standard::draw(galaga, pos, 10, 13, g);
     }
 }
+*/
 
-void Enemy::destroy() {
-    //cycle through the blow up frames, destroy object through destructor;
-}
 
 
 

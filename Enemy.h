@@ -134,8 +134,6 @@ public:
     */
     void moveShip(int, int);
 
-    void draw(SDL_Plotter g, int type);
-
     /*
     Precondition:
         Enemy object exists
