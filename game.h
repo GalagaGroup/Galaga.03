@@ -18,8 +18,8 @@ class Game{
 
 
     public:
-            int MAX_COLUMNS = 1000;
-                int MAX_ROWS = 1000;
+        int MAX_COLUMNS = 1000;
+        int MAX_ROWS = 1000;
         //sets up the default values of the game
         Game();
 
@@ -50,8 +50,6 @@ class Game{
         void updateScore(SDL_Plotter& g);
         //update the lives
         void updateLives(SDL_Plotter& g);
-
-
 };
 
 
