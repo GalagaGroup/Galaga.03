@@ -9,8 +9,8 @@ Date Last Modified: 4/3/2018 : (Mark)Initial Header variables and functions.
 
 */
 
-#ifndef BULLET_H
-#define BULLET_H
+#ifndef BULLET_H_INCLUDED
+#define BULLET_H_INCLUDED
 
 #include "game.h"
 #include "Position.h"
