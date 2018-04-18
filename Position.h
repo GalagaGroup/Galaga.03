@@ -8,8 +8,8 @@ Date Last Modified: 4/3/2018 : (Mark)Initial variables and functions.
                    4/14/2018 : (Mark) debugging
 */
 
-#ifndef GALAGACLASSES_POSITION_H
-#define GALAGACLASSES_POSITION_H
+#ifndef POSITION_H_INCLUDED
+#define POSITION_H_INCLUDED
 
 #include "game.h"
 

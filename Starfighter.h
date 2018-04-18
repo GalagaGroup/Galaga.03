@@ -13,11 +13,12 @@ Date Last Modified: 4/8/2018 : (Mark)Initial Functions and variables
 #define STARFIGHTER_H_INCLUDED
 
 #include "game.h"
+#include "Position.h"
 
 class Starfighter {
 public:
         int health = 1;
-        Position p;
+        //Position p;
         const char graphic[17][17] = {'B', 'B', 'B', 'B', 'B', 'B', 'B', 'W', 'B', 'B', 'B', 'B', 'B', 'B', 'B',//1
                                       'B', 'B', 'B', 'B', 'B', 'B', 'B', 'W', 'B', 'B', 'B', 'B', 'B', 'B', 'B',//2
                                       'B', 'B', 'B', 'B', 'B', 'B', 'W', 'W', 'W', 'B', 'B', 'B', 'B', 'B', 'B',//3
@@ -35,6 +36,7 @@ public:
                                       'W', 'W', 'B', 'B', 'R', 'R', 'B', 'W', 'B', 'R', 'R', 'B', 'B', 'W', 'W',//2
                                       'W', 'B', 'B', 'B', 'B', 'B', 'B', 'W', 'B', 'B', 'B', 'B', 'B', 'B', 'W',};
         Starfighter(int b, int x, int y);
+        Starfighter();
         void hit();
         void shoot();
         void moveShip(int a, SDL_Plotter &g);

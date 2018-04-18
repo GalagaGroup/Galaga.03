@@ -19,7 +19,7 @@ class Bullet{
 
 public:
     int health;
-    Position p1;
+    //Position p1;
     const char bullet[8][3] = {	     'B', 'Q', 'B',
                                      'B', 'Q', 'B',
                                      'Q', 'Q', 'Q',
@@ -30,7 +30,7 @@ public:
                                      'B', 'R', 'B',};
 
 
-    Bullet(Position);
+    //Bullet(Position);
     void moveShip(int x, int y);// moves ship x pixels in the x direction and y pixels in the y diirction
     //void draw(pass in array for char pixels);
 

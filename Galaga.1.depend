@@ -410,20 +410,18 @@
 
 1523992215 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\galaga.1\color.h
 
-1524012730 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\bullet.cpp
+1524015358 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\bullet.cpp
 	"Bullet.h"
 
-1524013990 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\bullet.h
+1524015347 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\bullet.h
 	"game.h"
 	"Position.h"
 
-1524013242 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\position.h
+1524015209 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\position.h
 	"game.h"
 
-1524002213 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\standard.h
-	"Position.h"
-	"SDL_Plotter.h"
-	"Color.h"
+1524015209 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\standard.h
+	"game.h"
 
 1524002213 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\sdl_plotter.h
 	<SDL2/SDL.h>
@@ -434,35 +432,35 @@
 	<string.h>
 	<map>
 
-1524013571 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\color.h
+1524015209 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\color.h
 	"game.h"
 
-1524014001 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\color.h
+1524015209 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\color.h
 	"game.h"
 
 1524014348 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\main.cpp
 	"game.h"
 	"time.h"
 
-1524014027 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\game.h
+1524015655 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\game.h
 	"Bullet.h"
 	"HUD.h"
-	"Position.h"
 	"SDL_Plotter.h"
 	"Starfighter.h"
-	"Type.h"
 	"Enemy.h"
 
-1524014291 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\starfighter.h
+1524015364 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\starfighter.h
 	"game.h"
+	"Position.h"
 
-1524013765 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\enemy.h
-	"game.h"
+1524015209 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\enemy.h
 	"SDL_Plotter.h"
 	"Position.h"
 
-1524002213 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\standard.cpp
+1524015634 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\standard.cpp
 	"Standard.h"
+	"game.h"
+	"color.h"
 
 1519922306 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\include\sdl2\sdl.h
 	"SDL_main.h"
@@ -1140,13 +1138,20 @@
 	"begin_code.h"
 	"close_code.h"
 
-1524012770 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\enemy.cpp
+1524013143 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\enemy.cpp
 	"Enemy.h"
-	"Standard.h"
 
 1524013143 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\hud.h
 	"game.h"
 
 1524002213 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\type.h
 	<vector>
+
+1524015663 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\game.cpp
+	"game.h"
+	"Enemy.h"
+
+1524015647 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\hud.cpp
+	"HUD.h"
+	<fstream>
 

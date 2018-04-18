@@ -13,17 +13,18 @@ HUD::HUD(){
 
 
 	ifstream inletters;
-	letters.open("Letters.txt");
+	inletters.open("Letters.txt");
 
 	for(int i = 0; i < 26; i++){
-			inletters >> rand_letter
+			inletters >> rand_letter;
 		for(int j = 0; j < 25; j++){
 			for(int k = 0; k < 25; i++){
 					inletters >> letters[i][j][k];
 			}
 		}
 	}
-
+}
+/*
 	for(int i = 0; i < top_Bar.length(); i++){
 			holder = int(char(top_Bar.substr(i, 1)));
 			holder = holder - 65;
@@ -37,3 +38,4 @@ HUD::HUD(){
 
 
 }
+*/

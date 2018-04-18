@@ -10,7 +10,7 @@ Date Last Modified: 4/3/2018 : (Mark)Initial Header variables and functions.
 #ifndef ENEMY_H_INCLUDED
 #define ENEMY_H_INCLUDED
 
-#include "game.h"
+//#include "game.h"
 #include "SDL_Plotter.h"
 #include "Position.h"
 

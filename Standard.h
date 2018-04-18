@@ -8,8 +8,8 @@ Date Last Modified: 4/3/2018 : (Mark)Create file
 
 */
 
-#ifndef GALAGACLASSES_STANDARD_H
-#define GALAGACLASSES_STANDARD_H
+#ifndef STANDARD_H_INCLUDED
+#define STANDARD_H_INCLUDED
 
 #include "game.h"
 /*

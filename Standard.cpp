@@ -8,6 +8,8 @@ Date Last Modified: 4/14/2018 : (Mark)Initial Header variables and functions.
 
 */
 #include "Standard.h"
+#include "game.h"
+#include "color.h"
 
 void draw(char graphic[][25], Position a, int height, int width, SDL_Plotter g) {
     Color col;
@@ -59,9 +61,14 @@ void draw(char graphic[][25], Position a, int height, int width, SDL_Plotter g) 
 }
 
 bool hit(Position one,char a[][25], Position two,char b[][25]) {
-    bool hit = false;
+    /*
+
     int rows = sizeof a / sizeof a[0];
     int cols = sizeof a.graphic[0] / sizeof(int);
+    */
+    int rows = 1;
+    int cols = 1;
+    bool hit = false;
 
     //if(top left corner is within the bounds of the shape ||
     // the top right corner is within the bounds of the shape ||

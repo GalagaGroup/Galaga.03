@@ -4,21 +4,22 @@
 
 #include "Bullet.h"
 #include "HUD.h"
-#include "Position.h"
 #include "SDL_Plotter.h"
 #include "Starfighter.h"
-#include "Type.h"
 #include "Enemy.h"
 
 using namespace std;
 
 class Game{
     private:
-        Starfighter star;
+        //Starfighter star;
         int enemies_killed;
-        Enemy enemies[8];
+       // Enemy enemies[8];
+
 
     public:
+            int MAX_COLUMNS = 1000;
+                int MAX_ROWS = 1000;
         //sets up the default values of the game
         Game();
 

@@ -16,12 +16,12 @@ void Starfighter::hit() {
 }
 
 void Starfighter::draw(SDL_Plotter g){
-	Standard::draw(graphic, p, 17, 17, g);
+	//Standard::draw(graphic, p, 17, 17, g);
 }
 
 void Starfighter::moveShip(int a, SDL_Plotter &g) {
-	p.x = p.x + a;
-	Color col;
+	//p.x = p.x + a;
+	//Color col;
 
 
     //draw();
@@ -40,7 +40,13 @@ void Starfighter::shoot() {
 
 Starfighter::Starfighter(int b, int x, int y){
     Type ship_Type(b);
-    p.x = x;
-    p.y = y;
+    //p.x = x;
+    //p.y = y;
+}
+
+Starfighter::Starfighter(){
+	health = 1;
+	//pos.x = 40;
+	//pos.y = 80;
 }
 
