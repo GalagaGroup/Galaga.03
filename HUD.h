@@ -8,8 +8,8 @@ Date Last Modified: 4/17/2018 : (Mark) created all variables
 
 */
 
-#ifndef GALAGACLASSES_HUD_H
-#define GALAGACLASSES_HUD_H
+#ifndef HUD_H_INCLUDED
+#define HUD_H_INCLUDED
 
 #include "game.h"
 
