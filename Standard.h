@@ -41,4 +41,4 @@ void draw(char graphic[][25], Position a, int height, int width, SDL_Plotter g);
  */
 bool hit(Position one, int a, Position two, int b);
 
-#endif //GALAGACLASSES_STANDARD_H
+#endif //STANDARD_H_INCLUDED

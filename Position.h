@@ -28,4 +28,4 @@ struct Position {
 };
 
 
-#endif //GALAGACLASSES_POSITION_H
+#endif //POSITION_H_INCLUDED
