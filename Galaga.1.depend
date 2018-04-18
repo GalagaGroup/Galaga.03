@@ -433,25 +433,29 @@
 	<string.h>
 	<map>
 
-1524011317 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\color.h
+1524013143 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\color.h
+	"game.h"
 
 1524011317 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\color.h
 
 1524002213 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\main.cpp
 	"game.h"
 
-1524007406 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\game.h
-	"Starfighter.h"
+1524009803 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\game.h
+	"Bullet.h"
 	"Enemy.h"
-
-1524006430 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\starfighter.h
+	"HUD.h"
+	"Position.h"
 	"SDL_Plotter.h"
-	"Position.h"
-	"Standard.h"
+	"Starfighter.h"
+	"Type.h"
+	"color.h"
 
-1524005362 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\enemy.h
-	"Position.h"
-	"Standard.h"
+1524013143 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\starfighter.h
+	"game.h"
+
+1524013143 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\enemy.h
+	"game.h"
 
 1524002213 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\standard.cpp
 	"Standard.h"
@@ -1135,4 +1139,10 @@
 1524012770 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\enemy.cpp
 	"Enemy.h"
 	"Standard.h"
+
+1524013143 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\hud.h
+	"game.h"
+
+1524002213 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\type.h
+	<vector>
 

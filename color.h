@@ -9,11 +9,13 @@ Date Last Modified: 4/3/2018 : (Mark)Initial Functions and variables
 					4/17/2018  : (Mark)Debugging
 					4/17/2018  : (Diego) set colors from 'int color = 128;' to 'int color;'
 */
+#include "game.h"
 
 struct Color{
     int r;
     int g;
     int b;
+
     Color(){
     r = 0;
     g = 0;

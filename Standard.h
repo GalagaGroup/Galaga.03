@@ -11,10 +11,7 @@ Date Last Modified: 4/3/2018 : (Mark)Create file
 #ifndef GALAGACLASSES_STANDARD_H
 #define GALAGACLASSES_STANDARD_H
 
-#include "Position.h"
-#include "SDL_Plotter.h"
-//#include "Type.h"
-#include "Color.h"
+#include "game.h"
 /*
  * Precondition:
  *      A graphic for the entity in the form of a char 2D array exists,

@@ -12,14 +12,7 @@ Date Last Modified: 4/8/2018 : (Mark)Initial Functions and variables
 #ifndef GALAGACLASSES_STARFIGHTER_H
 #define GALAGACLASSES_STARFIGHTER_H
 
-#include "SDL_Plotter.h"
-#include "Position.h"
-#include "Standard.h"
-//#include "color.h"
-
-
-
-
+#include "game.h"
 
 class Starfighter {
 public:

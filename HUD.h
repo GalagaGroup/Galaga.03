@@ -11,7 +11,7 @@ Date Last Modified: 4/17/2018 : (Mark) created all variables
 #ifndef GALAGACLASSES_HUD_H
 #define GALAGACLASSES_HUD_H
 
-#include "Standard.h"
+#include "game.h"
 
 class HUD {
 public:

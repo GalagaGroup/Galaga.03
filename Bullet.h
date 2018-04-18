@@ -5,12 +5,11 @@ Assignment:         Galaga : Bullet : Header File
 Date Created:       4/3/2018
 Date Last Modified: 4/3/2018 : (Mark)Initial Header variables and functions.
 					4/8/2018 : (Mark)Added moveShip function
-					
+
 
 */
 
-#include "Position.h"
-#include "Standard.h"
+#include "game.h
 
 class Bullet{
 private:

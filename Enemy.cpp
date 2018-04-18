@@ -8,7 +8,6 @@ Date Last Modified: 4/3/2018 : (Mark)Initial variables and functions.
 */
 
 #include "Enemy.h"
-#include "Standard.h"
 
 Enemy::Enemy() {
     shipType = 2;

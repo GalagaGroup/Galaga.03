@@ -6,8 +6,7 @@ Date Created:       4/3/2018
 Date Last Modified: 4/3/2018 : (Mark)Initial Header variables and functions.
 
 */
-#include "Position.h"
-#include "Standard.h"
+#include "game.h"
 
 class Enemy {
 private:
@@ -58,7 +57,7 @@ private:
                                  'G', 'O', 'O', 'G', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'G', 'O', 'O', 'G',
                                  'G', 'G', 'G', 'G', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'G', 'G', 'G', 'G',
                                  'B', 'G', 'G', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'G', 'G', 'B',};
-  
+
  /* constexpr static char explosion1[13][15] = {'Y', 'B', 'R', 'Y', 'B', 'R', 'B', 'B', 'B', 'Y', 'R', 'B', 'B',
                                               'B', 'B', 'R', 'R', 'B', 'B', 'Y', 'R', 'B', 'B', 'B', 'B', 'Y',
                                               'B', 'Y', 'B', 'Y', 'B', 'B', 'B', 'R', 'B', 'B', 'B', 'Y', 'B',

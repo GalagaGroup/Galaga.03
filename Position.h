@@ -11,6 +11,7 @@ Date Last Modified: 4/3/2018 : (Mark)Initial variables and functions.
 #ifndef GALAGACLASSES_POSITION_H
 #define GALAGACLASSES_POSITION_H
 
+#include "game.h"
 
 struct Position {
     int x;
