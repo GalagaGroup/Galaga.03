@@ -34,5 +34,5 @@ struct Color{
 };
 
 
-#endif
+#endif //COLOR_H_INCLUDED
 

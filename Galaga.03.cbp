@@ -31,11 +31,13 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
-			<Add directory="C:/Users/MarkF/Google Drive/Baylor/Semeter 2/CSI 1430/Group Project/Galaga.1/SDL/include" />
+			<Add directory="C:/SDL2-2.0.8/i686-w64-mingw32/include" />
+			<Add directory="C:/SDL/include" />
 		</Compiler>
 		<Linker>
 			<Add option="-lmingw32 -lSDL2main -lSDL2 -lSDL2_mixer" />
-			<Add directory="C:/Users/MarkF/Google Drive/Baylor/Semeter 2/CSI 1430/Group Project/Galaga.1/SDL/lib" />
+			<Add directory="C:/SDL2-2.0.8/i686-w64-mingw32/lib" />
+			<Add directory="C:/SDL/lib" />
 		</Linker>
 		<Unit filename="Bullet.cpp" />
 		<Unit filename="Bullet.h" />
@@ -48,10 +50,7 @@
 		<Unit filename="Standard.h" />
 		<Unit filename="Starfighter.cpp" />
 		<Unit filename="Starfighter.h" />
-		<Unit filename="color.h">
-			<Option compile="1" />
-			<Option link="1" />
-		</Unit>
+		<Unit filename="color.h" />
 		<Unit filename="game.cpp" />
 		<Unit filename="game.h" />
 		<Unit filename="main.cpp" />
