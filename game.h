@@ -1,14 +1,12 @@
 #ifndef GAME_H_INCLUDED
 #define GAME_H_INCLUDED
 
-#include "Bullet.h"
-#include "Enemy.h"
+//#include "Bullet.h"
 #include "HUD.h"
 #include "Position.h"
 #include "SDL_Plotter.h"
 #include "Starfighter.h"
 #include "Type.h"
-#include "color.h"
 
 using namespace std;
 

@@ -6,7 +6,13 @@ Date Created:       4/3/2018
 Date Last Modified: 4/3/2018 : (Mark)Initial Header variables and functions.
 
 */
+
+#ifndef _ENEMY_H_INCLUDED
+#define _ENEMY_H_INCLUDED
+
 #include "game.h"
+#include "SDL_Plotter.h"
+#include "Position.h"
 
 class Enemy {
 private:
@@ -144,3 +150,6 @@ public:
 
 
 };
+
+
+#endif // _ENEMY_H_INCLUDED

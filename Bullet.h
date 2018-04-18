@@ -9,15 +9,11 @@ Date Last Modified: 4/3/2018 : (Mark)Initial Header variables and functions.
 
 */
 
-<<<<<<< HEAD
-#include "game.h
-=======
+
 #include "game.h"
->>>>>>> 048e0954f7e253f5ca632ea4c8e0dd1f8883d3bb
+#include "Position.h"
 
 class Bullet{
-private:
-
 
 public:
     int health;
