@@ -10,6 +10,7 @@ Date Last Modified:     4/25/2018
 */
 
 #include "game.h"
+#include "time.h"
 
 int main(int argc, char** argv){
     srand(time(NULL));

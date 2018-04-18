@@ -8,6 +8,7 @@
 #include "SDL_Plotter.h"
 #include "Starfighter.h"
 #include "Type.h"
+#include "Enemy.h"
 
 using namespace std;
 

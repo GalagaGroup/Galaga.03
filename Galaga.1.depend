@@ -413,7 +413,7 @@
 1524012730 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\bullet.cpp
 	"Bullet.h"
 
-1524013397 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\bullet.h
+1524013990 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\bullet.h
 	"game.h"
 	"Position.h"
 
@@ -437,23 +437,26 @@
 1524013571 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\color.h
 	"game.h"
 
-1524013571 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\color.h
+1524014001 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\color.h
 	"game.h"
 
-1524002213 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\main.cpp
+1524014348 source:c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\main.cpp
 	"game.h"
+	"time.h"
 
-1524013599 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\game.h
+1524014027 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\game.h
+	"Bullet.h"
 	"HUD.h"
 	"Position.h"
 	"SDL_Plotter.h"
 	"Starfighter.h"
 	"Type.h"
+	"Enemy.h"
 
-1524013242 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\starfighter.h
+1524014291 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\starfighter.h
 	"game.h"
 
-1524013562 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\enemy.h
+1524013765 c:\users\markf\google drive\baylor\semeter 2\csi 1430\group project\groupproject.1\galaga.03\enemy.h
 	"game.h"
 	"SDL_Plotter.h"
 	"Position.h"

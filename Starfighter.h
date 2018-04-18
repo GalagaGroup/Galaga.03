@@ -9,8 +9,8 @@ Date Last Modified: 4/8/2018 : (Mark)Initial Functions and variables
 					                other classes
 */
 
-#ifndef GALAGACLASSES_STARFIGHTER_H
-#define GALAGACLASSES_STARFIGHTER_H
+#ifndef STARFIGHTER_H_INCLUDED
+#define STARFIGHTER_H_INCLUDED
 
 #include "game.h"
 
@@ -43,4 +43,4 @@ public:
 };
 
 
-#endif //GALAGACLASSES_STARFIGHTER_H
+#endif //STARFIGHTER_H_INCLUDED
