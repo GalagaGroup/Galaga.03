@@ -1,7 +1,8 @@
+
 #ifndef GAME_H_INCLUDED
 #define GAME_H_INCLUDED
 
-//#include "Bullet.h"
+#include "Bullet.h"
 #include "HUD.h"
 #include "Position.h"
 #include "SDL_Plotter.h"
